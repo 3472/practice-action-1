@@ -1,7 +1,8 @@
 name: Details
 on: issues
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print Details
-      run: echo "${{toJson(githib)}}"
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Details
+        run: echo "${{toJson(githib)}}"
